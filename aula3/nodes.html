@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM JS</title>
+</head>
+<body>
+    <div class="dom">
+    <div>
+        <h1>Título da página</h1>
+        <p name="teste">Este é o parágrafo 1</p>
+    </div>
+    <div class="principal">
+        <section name="init">
+            <h2>Seção init</h2>
+            <p>Este é o parágrafo 2</p>
+        </section>
+        <section name="middle">
+            <h2>Seção middle</h2>
+            <p>Este é o parágrafo 3</p>
+        </section>
+    </div> 
+    <input type="button" value="Buscar parágrafo" onclick="buscarp()"> 
+    </div>  
+
+    <div class="querySelector">
+        
+        <form>
+            <p><tt>Text</tt></p>
+            <select onchange=
+            "setBodyAttr('text', this.options[this.selectedIndex].value );">
+                <option value="black">Preto</option>
+                <option value="darkblue">Azul escuro</option>
+                <option value="purple">Roxo</option>
+            </select>
+
+            <p><tt>Background</tt></p>
+            <select onchange=
+            "setBodyAttr('bgColor', this.options[this.selectedIndex].value);">
+                <option value="gray">Cinza</option>
+                <option value="lightblue">Azul claro</option>
+                <option value="pink">Rosa</option>
+            </select>
+
+            <p><tt>Link</tt></p>
+            <select onchange="setBodyAttr('Link', this.options[this.selectedIndex].value);"">
+                <option value="green">Verde</option>
+                <option value="red">Vermelho</option>
+                <option value="purple">Roxo</option>
+            </select>
+            <a href="http://www.google.com" id="teste">Este é um link</a>
+        </form>
+    </div>
+    <script src="js/buscas.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

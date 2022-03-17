@@ -3,7 +3,7 @@ function buscarp(){
     alert(paragraph[1].textContent);
 }
 
-function setBodyAttr(attr,value){
+function setOp(attr,value){
     if(document.body) eval('document.body.' + attr + '= " '+value+' " ');
     else notSupported();
 }

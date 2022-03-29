@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/calculadora.js"></script>
+    <title>Calculadora - aula 2</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <h1>Calculadora JS</h1>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-4">
+          <label for="n1">Valor 1</label>
+          <input type="number" name="" id="valora">
+        </div>
+        <div class="col-md-4">
+            <label for="n2">Valor 2</label>
+            <input type="number" name="" id="valorb">
+        </div>
+      </div>
+      <div class="row">
+        <p></p>
+          <p>Qual a operação?</p>
+        <select id="operacao">
+          <option value="+">Adição (+)
+          <option value="-">Subtração (-)
+          <option value="*">Multiplicação (*)
+              <option value="/">Divisão (/)
+        </select>
+        <button onclick="calcular()">
+          Calcular
+        </button> 
+      </div>
+    <div class="row">
+        <h4 id="calculo">O cálculo é: </h4>
+        <h4 id="resultado">O resultado é: </h4>
+    </div>    
+</div>
+    
+</body>
+
+</html>

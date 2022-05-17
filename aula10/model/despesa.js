@@ -1,10 +1,9 @@
+const res = require('express')
 const conexao = require('../infra/connection')
-
-class Movimento{
-
-    adiciona(movimento){
-        let sql = 'INSERT INTO movimento SET ?'
-        conexao.query(sql, movimento)
+class Despesa{
+    adiciona(despesa){
+        let sql = 'INSERT INTO despesa SET ?'
+        conexao.query(sql,despesa)
     }
 }
-module.exports = new Movimento
+module.exports = new Despesa

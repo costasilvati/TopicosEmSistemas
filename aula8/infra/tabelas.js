@@ -2,10 +2,11 @@ class Tabelas{
     // construtor de Tabela
     init(conexao){
         console.log("Banco conectado com secesso!")
+        
     }
 
     criaDespesa(){
-        sql = 'CREATE TABLE despesa '+
+        sql = 'IF NOT EXISTS CREATE TABLE despesa '+
         '(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,'+
         'valor double NOT NULL,'+
         'descricao VARCHAR(150) NOT NULL)'
